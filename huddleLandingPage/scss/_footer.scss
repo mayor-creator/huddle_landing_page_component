@@ -1,0 +1,26 @@
+@import "./mixins";
+.socialFooterIcons,
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    list-style: none;
+    padding-left: 0rem;
+    li {
+        padding: 5px;
+    }
+    i.fa {
+        display: inline-block;
+        border-radius: 3.125rem;
+        box-shadow: 0rem 0rem 0.125rem $white;
+        padding: 0.5rem 0.6rem;
+        color: $white;
+    }
+    i.fa:hover {
+        box-shadow: 0rem 0rem 0.125rem $softMagneta;
+        color: $softMagneta;
+    }
+}

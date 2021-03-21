@@ -1,0 +1,23 @@
+@import "./header";
+@import "./content";
+@import "./footer";
+@import "./mixins";
+@include desktop {
+    .mainContainer {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto auto;
+    }
+    .navigation {
+        place-self: center;
+    }
+    .content {
+        place-self: center;
+        padding: 95px;
+        margin: 50px;
+    }
+    .socialFooter {
+        grid-column: 2;
+        place-self: center;
+    }
+}

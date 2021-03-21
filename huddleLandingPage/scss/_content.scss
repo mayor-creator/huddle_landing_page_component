@@ -1,0 +1,51 @@
+@import "./mixins";
+h2 {
+    color: $white;
+    font-family: $headingFontFamily;
+    font-weight: 600;
+    @include mobile {
+        text-align: center;
+        margin-left: 1.5625rem;
+        margin-right: 1.5625rem;
+        padding-right: 0.625rem;
+    }
+    @include desktop {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+p {
+    color: $white;
+    @include mobile {
+        text-align: center;
+        word-spacing: 0.3125rem;
+        margin: 1rem;
+    }
+    @include desktop {
+        //text-align: center;
+    }
+}
+
+button {
+    width: 12.6875rem;
+    height: 2.75rem;
+    border-radius: 3.125rem;
+    border: none;
+    color: $violetColor;
+}
+
+button:hover {
+    background-color: $softMagneta;
+    color: $white;
+}
+
+@include mobile {
+    .registerButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.9375rem;
+    }
+}

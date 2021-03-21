@@ -1,0 +1,31 @@
+@import "./mixins";
+.navigation {
+    padding: 1.5rem;
+}
+
+.logoImage {
+    width: 7.9375rem;
+    height: 1.5625rem;
+}
+
+@include mobile {
+    .illustration {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4.6875rem;
+    }
+    .illustrationImage {
+        width: 19rem;
+        height: 13.375rem;
+    }
+}
+
+@include desktop {
+    .illustration {
+        padding-top: 60px;
+    }
+    .illustrationImage {
+        padding: 50px 10px 10px 10px;
+    }
+}
