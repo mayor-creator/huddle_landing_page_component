@@ -4,55 +4,39 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- icons -->
     <script src="https://kit.fontawesome.com/2b2bb1d22a.js" crossorigin="anonymous"></script>
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./app/scss/style.css">
     <title>
         Frontend Mentor | Huddle landing page with single introductory section
     </title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 
 <body>
-    <div class="mainContainer">
-        <header class="navigation">
-            <nav class="logo"><img class="logoImage" src="./images/logo.svg" </nav>
-                <div class="illustration">
-                    <img class="illustrationImage" src="./images/illustration-mockups.svg" />
-                </div>
-        </header>
-        <div class="content">
-            <h2>Build The Community Your Fans Will Love</h2>
-            <p>
-                Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
-            </p>
-            <div class="registerButton">
-                <button>Register</button>
-            </div>
+    <div class="grid-container">
+        <div class="left-item">
+            <img class="logo-image" src="./images/logo.svg" alt="logo image" />
+            <img class="illustration-image" src="./images/illustration-mockups.svg" alt="illustration mockup image" />
         </div>
 
-        <footer class="socialFooter">
-            <div class="socialFooterIcons">
-                <ul class="icons">
-                    <li>
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
+        <div class="right-item">
+            <h1>Build The Community Your Fans Will Love</h1>
+            <p>
+                Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+                Create connections with your users as you engage in genuine discussion.
+            </p>
+            <button class="register-button">Register</button>
+            <div class="icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
             </div>
-        </footer>
+
+        </div>
     </div>
 </body>
 
