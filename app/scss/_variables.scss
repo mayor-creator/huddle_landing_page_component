@@ -1,0 +1,30 @@
+/*typography */
+$heading_font_family: 'Poppins',
+sans-serif;
+$heading_font_weight: 400;
+$six_hundred_heading_font-weight: 600;
+$body_font_family: 'Open Sans',
+sans-serif;
+$body_font_weight: 400;
+
+/*colors*/
+$violet: hsl(257, 40%, 49%);
+$soft_magneta: hsl(300, 69%, 71%);
+$white: #ffff;
+
+/* media queries */
+$mobile-width: 30em;
+@mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+
+//@media (min-width:1201px) and (max-width:1600px) {
+$laptop_min-width: 75.0625em;
+$laptop_max-width: 100em;
+@mixin laptop {
+    @media ((min-width: #{$laptop_min-width}) and (max-width: #{$laptop_max-width})) {
+        @content;
+    }
+}
